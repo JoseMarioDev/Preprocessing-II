@@ -30,6 +30,29 @@ header {
     }
   }
 
+  @media @mobile {
+    .content-section {
+      margin: 0 auto 30px;
+      flex-direction: column;
+
+      .text-content {
+        width: 100%;
+      }
+
+      .img-content {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .inverse-content {
+      flex-direction: column-reverse;
+    }
+  }
+
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
@@ -63,6 +86,13 @@ header {
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      .destination {
+        width: 100%;
+      }
     }
   }
 
